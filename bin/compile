@@ -143,7 +143,7 @@ fi
 
 # install bower components
 status "Installing bower components"
-$build_dir/node_modules/bower/bin/bower install
+$build_dir/node_modules/bower/bin/bower --allow-root install
 
 # run grunt
 if [ -f $build_dir/grunt.js ] || [ -f $build_dir/Gruntfile.js ] || [ -f $build_dir/Gruntfile.coffee ]; then
